@@ -1,0 +1,187 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Waiting | Sophia</title>
+<link rel="shortcut icon" href="https://Francois3344.github.io/favicon.ico?v=1726282172261">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Francois3344.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Waiting | Sophia - Atom Feed" href="https://Francois3344.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="I stand at the hallway, waiting
+I don’t know what the season is
+I don’t know what the weather is
+I don't know who I’m wa..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Francois3344.github.io">
+  <img class="avatar" src="https://Francois3344.github.io/images/avatar.png?v=1726282172261" alt="">
+  </a>
+  <h1 class="site-title">
+    Sophia
+  </h1>
+  <p class="site-description">
+    Because it's there.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Essay
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          Novels
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Waiting
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-09-12
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>I stand at the hallway, waiting<br>
+I don’t know what the season is<br>
+I don’t know what the weather is<br>
+I don't know who I’m waiting for.</p>
+<p>Tweet, tweet.<br>
+It whispers, why are you here and why are you waiting?<br>
+Who are you waiting for?<br>
+The boy caught your heart or the girl made you’n love?</p>
+<p>No, I reply, teasing its feather<br>
+I don’t know who I’m waiting for<br>
+I’m not for him’cause I have my rose<br>
+I’m not for her’cause I have my fleur de lis.</p>
+<p>Meow, meow.<br>
+It murmurs, why are you here and why are you waiting?<br>
+Who are you waiting for?<br>
+The dream in your night or the bubbles in your life?</p>
+<p>No, I reply, fondling its fur<br>
+I don’t know who I’m waiting for<br>
+I’m not for it’cause it never back<br>
+I’m not for it’cause it’s always fake</p>
+<p>Rustle, rustle.<br>
+It susurrates, why are you here and why are you waiting?<br>
+Who are you waiting for?<br>
+The Utopia in your mind or the Eden in your heart?</p>
+<p>No, I reply, appeasing its spine<br>
+I don’t know who I’m waiting for<br>
+I’m not for it’cause it’s broken<br>
+I’m not for it’cause it’s poison</p>
+<p>I step outside and see<br>
+All the transparent world under eye,<br>
+All the transparent world under mine,<br>
+Under the firmament I’ve lost.</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://Francois3344.github.io/post/tragedy-and-criticism/">
+              <h3 class="post-title">
+                Tragedy and Criticism
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://Francois3344.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tragedy and Criticism | Sophia</title>
+<link rel="shortcut icon" href="https://Francois3344.github.io/favicon.ico?v=1726282172261">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Francois3344.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Tragedy and Criticism | Sophia - Atom Feed" href="https://Francois3344.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="I love the books of both Yuhua and Luxun, but they definitely have great difference from each other. I think there are t..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Francois3344.github.io">
+  <img class="avatar" src="https://Francois3344.github.io/images/avatar.png?v=1726282172261" alt="">
+  </a>
+  <h1 class="site-title">
+    Sophia
+  </h1>
+  <p class="site-description">
+    Because it's there.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Essay
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          Novels
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Tragedy and Criticism
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-09-12
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>I love the books of both Yuhua and Luxun, but they definitely have great difference from each other. I think there are two points: the purpose and expressing ways.</p>
+<p>Purposes. They are in different eras, so it’s easy to find that Lu paid more attention to the mess of the society, and he was always trying to figure them out. However, instead of critisizing, Yu are just telling us about the mess, not so radical as Lu. He uses some rhetorical device like irony, which makes others difficult to make clear his ideas. If you know about him, or the history he try to tell, then you will easily understand, but if you want to point out his polic faults in his masterpiece, you can’t.</p>
+<p>Expressing ways. In Lu’s era, vernacular Chinese is just developed, and it’s quite different from what we use know. In his articles, he uses some images and description that are more common in ancient Chinese, and that will make them a little hard to understand. That’s the different in language using habit. In expressing, Yu always use the strategic that is for comedies to write tragedies. Yu is famous for his tragedies, not for how sad or miserable the characters are, but for the common hard life for people. When I read his books, I feel absurd because his tone is humorous, and he can even make some jokes in them, but the core of the stories are all sad. In Lu’s books and articles, he didn’t make all his stories sad or miserable. They are just stories and their have their specific purposes to convey.</p>
+<p>Both of them can creating a feeling of absurd, but that can also be different. Absurd can be sad, irony, angry... Lu’s are most angry but Yu’s are always absurd and sad.</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://Francois3344.github.io/post/lines/">
+              <h3 class="post-title">
+                Lines
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://Francois3344.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

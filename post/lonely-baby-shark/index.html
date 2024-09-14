@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lonely baby shark | Sophia</title>
+<link rel="shortcut icon" href="https://Francois3344.github.io/favicon.ico?v=1726282172261">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Francois3344.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Lonely baby shark | Sophia - Atom Feed" href="https://Francois3344.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="你为什么悲伤，
+我亲爱的小鲨鱼。
+你在海里吐泡泡，
+忧伤眼眸望着天。
+太阳踽踽向西行，
+浮光碎金尽染波。
+Why are you sad, my lovely baby shark
+you’re bubbling in the sea
+lo..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Francois3344.github.io">
+  <img class="avatar" src="https://Francois3344.github.io/images/avatar.png?v=1726282172261" alt="">
+  </a>
+  <h1 class="site-title">
+    Sophia
+  </h1>
+  <p class="site-description">
+    Because it's there.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Essay
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          Novels
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Lonely baby shark
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-09-14
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>你为什么悲伤，<br>
+我亲爱的小鲨鱼。<br>
+你在海里吐泡泡，<br>
+忧伤眼眸望着天。<br>
+太阳踽踽向西行，<br>
+浮光碎金尽染波。</p>
+<p>Why are you sad, my lovely baby shark<br>
+you’re bubbling in the sea<br>
+lonely eyes staring the sky<br>
+It travels to the west,<br>
+golden light dyes the wave.</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://Francois3344.github.io/post/transcendentalism/">
+              <h3 class="post-title">
+                Transcendentalism
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://Francois3344.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
